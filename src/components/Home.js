@@ -50,7 +50,7 @@ class Home extends React.Component {
                     name: "Amir",
                     mobile: "9671960116",
                     occupation:"Full Stack Engineer",
-                    image:"https://thumb.ibb.co/ka0NLy/inambhai.jpg",
+                    image:"https://thumb.ibb.co/hS4Snd/amir.jpg",
                     expense:4500,
                     isApplicable:true
                 },
