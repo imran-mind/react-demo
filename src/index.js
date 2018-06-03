@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import Modal from 'react-modal';
 import App from './App.js';
-
+import { Provider } from './context';
 // class App extends React.Component {
 //     constructor() {
 //         super();
@@ -42,7 +42,10 @@ import App from './App.js';
 // }
 
 ReactDOM.render(
-    <App />
+    <Provider value ={{name:"Imran Shaikh"}}>
+        <App />
+    </Provider>
+
     , document.getElementById('root'));
 // import TodoItem from './components/TodoItem';
 // import TodoForm from './components/TodoForm';
