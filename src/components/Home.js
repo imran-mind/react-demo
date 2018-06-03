@@ -10,7 +10,7 @@ class Home extends React.Component {
                     name: "Inam bhai",
                     mobile: "7971960116",
                     occupation:"Front End Engineer",
-                    image:"https://thumb.ibb.co/hztdSd/IMG_20180519_134302714_HDR.jpg",
+                    image:"https://thumb.ibb.co/ka0NLy/inambhai.jpg",
                 },
                 {
                     name: "imran",
@@ -23,6 +23,13 @@ class Home extends React.Component {
                     mobile: "9771960116",
                     occupation:"Full Stack Engineer",
                     image:"https://thumb.ibb.co/ic11DJ/3.jpg",
+                   
+                },
+                {
+                    name: "Mr.Collector",
+                    occupation:"Mobile Engineer",
+                    mobile: "9671960116",
+                    image:"https://thumb.ibb.co/cGadtJ/shailesh.jpg",
                    
                 },
                 {
@@ -43,7 +50,7 @@ class Home extends React.Component {
                     name: "Amir",
                     mobile: "9671960116",
                     occupation:"Full Stack Engineer",
-                    image:"https://thumb.ibb.co/dndOtJ/8fb4e6b0_2548_4858_9c6c_4761b1d87b19.jpg",
+                    image:"https://thumb.ibb.co/ka0NLy/inambhai.jpg",
                     expense:4500,
                     isApplicable:true
                 },
@@ -51,7 +58,7 @@ class Home extends React.Component {
                     name: "Azhar",
                     mobile: "9671960116",
                     occupation:"Mobile Engineer",
-                    image:"http://lorempixel.com/400/200/sports/9/",
+                    image:"https://thumb.ibb.co/fv9hLy/azhar.jpg",
                    
                 },
                
@@ -60,14 +67,14 @@ class Home extends React.Component {
                     name: "Mr.Marchant",
                     occupation:"Hr Excutive",
                     mobile: "9971960116",
-                    image:"http://lorempixel.com/400/200/sports/10/",
+                    image:"https://thumb.ibb.co/d57rDJ/marchant.jpg",
                    
                 },
                 {
                     name: "Mr KK",
                     mobile: "9671960116",
                     occupation:"Market Researcher",
-                    image:"http://lorempixel.com/400/200/sports/5/",
+                    image:"https://thumb.ibb.co/cdisLy/kk.jpg",
                     
                 },
                 {
@@ -86,7 +93,7 @@ class Home extends React.Component {
                 <h1>Haweli Members</h1>
                 {   
                     this.state.users.map((user)=>
-                        <Profile 
+                        <Profile key={user.name}
                          name={user.name}
                          occupation={user.occupation}
                          mobile={user.mobile}
